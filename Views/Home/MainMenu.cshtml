@@ -1,0 +1,47 @@
+﻿@{
+	ViewData["Title"] = "MainMenu";
+}
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="~/css/materialize.css" media="screen,projection" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link type="text/css" rel="stylesheet" href="~/css/site.css" />
+</head>
+
+<body class="BackgroundLite">
+	<nav>
+		<div text-align="center">
+
+
+			<ul class="right hide-on-med-and-down">
+				<li>
+					<a><i class="material-icons photo" data-title="Новости">newspaper</i></a>
+				</li>
+				<li><a asp-action="ShopMenu" asp-controller="Home"><i class="material-icons photo" data-title="Магазин">computer</i></a></li>
+				<li><a href="collapsible.html"><i class="material-icons photo" data-title="Корзина">shopping_cart</i></a></li>
+				<li><a href="mobile.html"><i class="material-icons photo" data-title="Пользователи">group</i></a></li>
+			</ul>
+		</div>
+	</nav>
+	<div class="image-border">
+		<img src="https://html5book.ru/wp-content/uploads/2015/10/flower-example-5.jpg">
+		<div class="post-info">
+			<h3 class="post-title">Ветка вишни</h3>
+			<p><span class="meta">Май 11, 2015</span></p>
+			<span class="diamond"></span>
+			<span class="diamond"></span>
+			<span class="diamond"></span>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<script>
+		function GoTo() {
+			window.location.href = "https://localhost:44315/Home/UserProfile";
+		}
+	</script>
+	<script src="~/js/MainMenu.js"></script>
+</body>
+</html>
